@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+body {
+    background: #f9f9f9 !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body,
+input,
+button {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.app {
+    margin: 0px auto 0;
+    max-width: 620px;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 30px;
+    padding-left: 0;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+}
+
+.container p {
+    text-align: center;
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form label {
+    font-size: 14px;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.container form input {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 45px;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.container button.btn {
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    height: 42px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #304585;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container button.btn:hover {
+    background: #26448C;
+}
+
+.logo {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo>img {
+    width: 119px;
+    height: 146px;
+}
+
+.container .formulario {
+    border-left: 1px solid #efefef;
+    padding-left: 30px;
+    flex: 1;
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+    .app {
+        padding: 20px;
+    }
+    .container .formulario {
+        border: 0;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .logo>img {
+        width: 105px;
+        height: 135px;
+    }
+    .container p {
+        font-size: 18px;
+    }
+}
+
+@media print {
+    page {
+        page-break-after: always;
+    }
+}
